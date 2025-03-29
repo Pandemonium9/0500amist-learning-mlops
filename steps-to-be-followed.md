@@ -35,6 +35,12 @@
    $ pip install numpy
    $ pip install pandas
 
+9. Install matplotlib
+   $ pip install matplotlib
+
+10. Install Scikit Learn
+   $ pip install scikit-learn
+
 
 
 
