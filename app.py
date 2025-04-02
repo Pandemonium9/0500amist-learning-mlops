@@ -11,9 +11,8 @@ def predict():
     model_path = 'model/model.pkl'
     model = pickle.load(open(model_path, 'rb'))
 
-    user_input = request.json()
-    
-    
+    user_input = request.json
+        
     rooms = int(user_input.get('rooms',0))
     area = int(user_input.get('area',0))
 
