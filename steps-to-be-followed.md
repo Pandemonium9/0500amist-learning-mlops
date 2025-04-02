@@ -41,8 +41,14 @@
 10. Install Scikit Learn
    $ pip install scikit-learn
 
+11. Install Flasj
+   $ pip install flask
+
 
 
 To Test:
-$ curl -X POST http://localhost:5000/predict -H "Content-Type: application/json" -d '{"rooms": 2,"area": 5000}
+- Using POSTMAN
+OR
+- Using CURL
+   $ curl -X POST http://localhost:5000/predict -H "Content-Type: application/json" -d '{"rooms": 2,"area": 5000}
    
