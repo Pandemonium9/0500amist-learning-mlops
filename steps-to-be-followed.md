@@ -1,54 +1,66 @@
+################################################################################################# 
 # Tools to be Installed
+#################################################################################################
 
-1. Editor - Visual Studio Code
-   https://code.visualstudio.com/
+# 1. Install Visual Studio Code (Editor)
+- Download and install Visual Studio Code from [https://code.visualstudio.com/](https://code.visualstudio.com/).
 
+# 2. Install Git (Version Control System)
+- Download and install Git from [https://git-scm.com/](https://git-scm.com/).
 
-2. Version Control System - git
-   https://git-scm.com/
+# 3. Set up GitHub (For Git Repositories)
+- Create an account or log in to [GitHub](https://github.com/).
 
+# 4. Install Java JDK
+- Download Java JDK 17 from [Oracle's website](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html).
+- Set environment variables:
+   - `JAVA_HOME`: Path to the Java installation directory (e.g., `C:\Program Files\Java\jdk-17\`).
+   - Add `%JAVA_HOME%\bin` to the `PATH` variable.
 
-3. For Git Repos - GitHub
-   https://github.com/
-   
+# 5. Install Python
+- Download and install Python from [https://www.python.org/](https://www.python.org/).
+- Add Python to the `PATH` (e.g., `C:\python`).
 
-4. Install Java JDK
-   https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html
+# 6. Install Jupyter Lab
+- Open a terminal and run:
+   ```bash
+   pip install jupyterlab
+   pip install notebook
+   ```
 
-   JAVA_HOME: <Where Java is Installed>
-   JAVA_HOME: C:\Program Files\Java\jdk-17\
+# 7. Install PySpark
+- Open a terminal and run:
+   ```bash
+   pip install pyspark
+   ```
 
-   PATH:      <Where Java Compiler is available>
-   PATH = <EXISTING PATH > + %JAVA_HOME%\bin
+# 8. Install Numpy and Pandas
+- Open a terminal and run:
+   ```bash
+   pip install numpy
+   pip install pandas
+   ```
 
-5. Install Python
-   PATH : C:\python
+# 9. Install Matplotlib
+- Open a terminal and run:
+   ```bash
+   pip install matplotlib
+   ```
 
-6. Install Jupyter Lab:
-   $ pip install jupyterlab
-   $ pip install notebook
+# 10. Install Scikit-Learn
+- Open a terminal and run:
+   ```bash
+   pip install scikit-learn
+   ```
 
-7. Install PySpark
-   $ pip install pyspark
+# 11. Install Flask
+- Open a terminal and run:
+   ```bash
+   pip install flask
+   ```
 
-8. Install Numpy and Pandas
-   $ pip install numpy
-   $ pip install pandas
-
-9. Install matplotlib
-   $ pip install matplotlib
-
-10. Install Scikit Learn
-   $ pip install scikit-learn
-
-11. Install Flasj
-   $ pip install flask
-
-
-
-To Test:
-- Using POSTMAN
-OR
-- Using CURL
-   $ curl -X POST http://localhost:5000/predict -H "Content-Type: application/json" -d '{"rooms": 2,"area": 5000}
-   
+# To Test:
+- Use [Postman](https://www.postman.com/) or `curl` to test your setup:
+   ```bash
+   curl -X POST http://localhost:5000/predict -H "Content-Type: application/json" -d '{"rooms": 2, "area": 5000}'
+   ```
