@@ -64,3 +64,8 @@
    ```bash
    curl -X POST http://localhost:5000/predict -H "Content-Type: application/json" -d '{"rooms": 2, "area": 5000}'
    ```
+
+# USE JENKINS
+- Create Job
+    $ python model.py
+  - $ aws s3 cp model/rental_prediction_model.pkl s3://<bucket-name>>/model/rental_prediction_model.pkl 
