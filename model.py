@@ -19,9 +19,6 @@ data_path = 'data/rental_1000.csv'
 df = pd.read_csv(data_path)
 
 # Feature engineering: Select Features (X) and Label (y)
-if not {'rooms', 'area', 'price'}.issubset(df.columns):
-    raise ValueError("Dataset must contain 'rooms', 'area', and 'price' columns.")
-
 X = df[['rooms', 'area']].values
 y = df['price'].values
 
