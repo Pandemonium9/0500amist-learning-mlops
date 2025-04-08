@@ -67,5 +67,10 @@
 
 # USE JENKINS
 - Create Job
+ - Task1:
     $ python model.py
   - $ aws s3 cp model/rental_prediction_model.pkl s3://<bucket-name>>/model/rental_prediction_model.pkl 
+
+ - Task2:
+   $ docker build . -t <<dockerhub-name>>/<<registry-name>>  
+   $ docker push <<dockerhub-name>>/<<registry-name>>:latest
